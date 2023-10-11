@@ -76,10 +76,11 @@ body{
     font-size: 60px;
     font-size: 70px ;
     font-weight: 800;
-
+    margin-bottom: 0px;
 }
 
 .roundedScore p{
+    margin-top: 0px;
     color: rgb(159, 159, 159);
     font-size: 18px;
 }
@@ -114,6 +115,11 @@ body{
     height: 58px;
     border-radius: 15px;
     justify-content: space-between;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+}
+.stats span{
+    color: rgb(30, 30, 30);
 }
 .stat1{
     background-color: hsl(0, 100%, 67%,0.08);
@@ -132,16 +138,20 @@ body{
     color: var(--Cobalt-blue);
 }
 
+.summaryTitle{
+    display: flex;
+    align-items: center;
+}
+
 .mark {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 70px;
     margin-right: 10px;
     font-size: 20px;
 }
 
 .mark p{
+    margin-left: 5px;
     color: rgb(161, 161, 161);
 }
 
@@ -154,14 +164,20 @@ img{
     margin-right: 12px;
 }
 
-button{
+button:hover,
+button:focus-visible {
     background-image: linear-gradient(var(--Light-slate-blue),var(--Light-royal-blue));
+}
+
+button{
+    background-color: var(--Dark-gray-blue);
     width: 288px;
     height: 55px;
     border: none;
     border-radius: 90px;
     color: white;
     margin:40px 40px 45px 40px;
+    cursor: pointer;
 }
 
 .attribution{
